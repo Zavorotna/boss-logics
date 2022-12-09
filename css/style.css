@@ -210,6 +210,11 @@ header:hover>.bgc-third {
     padding: 40px 0;
 }
 
+.logo-img {
+	width: 166px;
+	height: 22px;
+}
+
 .nav-flex {
 	column-gap: 50px;
 }
@@ -248,13 +253,13 @@ header:hover>.bgc-third {
 a.fb {
 	width: 11px;
 	height: 19px;
-	background-position: 0 0;
+	background-position: -1px -3px;
 }
 
 a.fb:hover {
 	width: 11px;
 	height: 19px;
-	background-position: 0 -22px;
+	background-position: 0 -23px;
 }
 
 a.tw {
@@ -290,7 +295,7 @@ a.in {
 a.in:hover {
 	width: 21px;
 	height: 21px;
-	background-position: -60px -21px;
+	background-position: -60px -22px;
 }
 
 .start-info {
