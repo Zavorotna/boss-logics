@@ -253,49 +253,49 @@ header:hover>.bgc-third {
 a.fb {
 	width: 11px;
 	height: 19px;
-	background-position: -1px -3px;
+	background-position: -2px -2px;
 }
 
 a.fb:hover {
 	width: 11px;
 	height: 19px;
-	background-position: 0 -23px;
+	background-position: -2px -24px;
 }
 
 a.tw {
 	width: 24px;
 	height: 19px;
-	background-position: -13px -1px;
+	background-position: -15px -2px;
 }
 
 a.tw:hover {
 	width: 24px;
 	height: 19px;
-	background-position: -13px -23px;
+	background-position: -15px -24px;
 }
 
 a.inst {
 	width: 20px;
 	height: 19px;
-	background-position: -39px -1px;
+	background-position: -41px -2px;
 }
 
 a.inst:hover {
 	width: 20px;
 	height: 19px;
-	background-position: -38px -23px;
+	background-position: -41px -24px;
 }
 
 a.in {
 	width: 21px;
 	height: 21px;
-	background-position: -61px 0;
+	background-position: -63px -2px;
 }
 
 a.in:hover {
 	width: 21px;
 	height: 21px;
-	background-position: -60px -22px;
+	background-position: -63px -24px;
 }
 
 .start-info {
@@ -706,7 +706,7 @@ footer {
 	left: 0;
 	width: 14px;
 	height: 11px;
-	background-position: -84px -9px;
+	background-position: -86px -12px;
 }
 
 .phone::before {
@@ -714,7 +714,7 @@ footer {
 	left: 0;
 	width: 14px;
 	height: 15px;
-	background-position: -112px -7px;
+	background-position: -114px -10px;
 }
 
 .adress::before {
@@ -722,7 +722,7 @@ footer {
 	left: 0;
 	width: 10px;
 	height: 15px;
-	background-position: -100px -6px;
+	background-position: -102px -9px;
 }
 
 .contacts > p {
@@ -796,49 +796,49 @@ footer {
 a.fb-b {
 	width: 11px;
 	height: 19px;
-	background-position: 0 0;
+	background-position: -2px -2px;
 }
 
 a.fb-b:hover {
 	width: 11px;
 	height: 19px;
-	background-position: 0 -44px;
+	background-position: -3px -47px;
 }
 
 a.tw-b {
 	width: 24px;
 	height: 19px;
-	background-position: -13px -1px;
+	background-position: -15px -2px;
 }
 
 a.tw-b:hover {
 	width: 24px;
 	height: 19px;
-	background-position: -13px -45px;
+	background-position: -16px -48px;
 }
 
 a.inst-b {
 	width: 20px;
 	height: 19px;
-	background-position: -39px -1px;
+	background-position: -41px -2px;
 }
 
 a.inst-b:hover {
 	width: 20px;
 	height: 19px;
-	background-position: -39px -45px;
+	background-position: -42px -48px;
 }
 
 a.in-b {
 	width: 21px;
 	height: 21px;
-	background-position: -61px 0;
+	background-position: -64px -2px;
 }
 
 a.in-b:hover {
 	width: 21px;
 	height: 21px;
-	background-position: -61px -44px;
+	background-position: -65px -46px;
 }
 
 .footer-bottom p {
