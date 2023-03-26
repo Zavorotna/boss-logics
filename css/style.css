@@ -93,20 +93,20 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 70px;
+    font-size: 40px;
     line-height: 1em;
     color: #1a1a1a;
     font-weight: 500;
 }
 
 h2 {
-	font-size: 70px;
+	font-size: 40px;
 	line-height: 1em;
 	color: #1a1a1a;
 	font-weight: 500;
 }
 
-ul>li {
+ul > li {
     list-style: none;
 }
 
@@ -143,67 +143,44 @@ hr {
 
 .flex-between {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+	flex-wrap: wrap;
 }
 
 .bgc-first {
 	position: absolute;
 	width: 100%;
-	height: 160%;
-	top: -50%;
+	height: 100%;
+	top: -5%;
 	right: -30%;
 	background: url(../img/bcg-first.svg) no-repeat;
-	background-size: 200% / contain;
-	z-index: -1;
-	transition: all 2s ease;
+	background-size: 100%;
 	transform: rotate(-5deg);
-}
-
-header:hover>.bgc-first {
-	top: -55%;
-	right: -25%;
-	transform: rotate(-25deg);
-	filter: drop-shadow(5px 5px 20px 10px #176599);
+	z-index: -1;
 }
 
 .bgc-second {
 	position: absolute;
-	width: 60%;
-	height: 200%;
-	top: -60%;
-	right: -5%;
+	width: 100%;
+	height: 100%;
+	top: -10%;
+	right: -105%;
 	background: url(../img/bcg-first.svg) no-repeat;
-	background-size: 100% / contain;
+	background-size: 100%;
 	z-index: -1;
-	transform: rotate(-5deg);
-	transition: all 2s ease;
-}
-
-header:hover>.bgc-second {
-	top: -65%;
-	right: 0%;
 	transform: rotate(-20deg);
-	filter: drop-shadow(5px 5px 20px 10px #176599);
 }
 
 .bgc-third {
 	position: absolute;
-	width: 95%;
-	height: 200%;
-	top: -90%;
-	right: -45%;
+	width: 100%;
+	height: 100%;
+	top: -42%;
+	right: -10%;
 	background: url(../img/bcg-first.svg) no-repeat;
 	background-size: 100% / contain;
-	z-index: -1;
-	transform: rotate(-10deg);
-	transition: all 2s ease;
-}
-
-header:hover>.bgc-third {
-	top: -85%;
-	right: -55%;
-	transform: rotate(-15deg);
-	filter: drop-shadow(5px 5px 20px 10px #176599);
+	z-index: -2;
+	transform: rotate(-45deg);
 }
 
 .logo {
@@ -211,8 +188,9 @@ header:hover>.bgc-third {
 }
 
 .logo-img {
-	width: 166px;
-	height: 22px;
+	width: 100%;
+	max-width: 166px;
+	max-height: 22px;
 }
 
 .nav-flex {
@@ -221,7 +199,7 @@ header:hover>.bgc-third {
 
 .top-menu {
     padding: 0;
-    column-gap: 40px;
+    column-gap: 20px;
 }
 
 .top-menu a {
@@ -229,11 +207,11 @@ header:hover>.bgc-third {
     letter-spacing: 1px;
     line-height: 6.5em;
     text-transform: uppercase;
-    color: #fefefe;
+	color: #1a1a1a;
 }
 
 .top-menu li:hover > a {
-	color: #1a1a1a;
+	color: #050364;
 	font-weight: bold;
 }
 
@@ -301,6 +279,7 @@ a.in:hover {
 .start-info {
 	justify-content: space-evenly;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .line {
@@ -329,19 +308,29 @@ a.in:hover {
 
 .main-exit > p {
 	max-width: 674px;
-	padding: 35px 0;
+	padding: 35px 15px;
 }
 
-.main-picture {
-	padding-bottom: 80px;
+.main-picture img,
+.jeverly img,
+.mcbook img,
+.second-jev img,
+.mc-last {
+	width: 100%;
+	height: 100%;
+	object-fit: cover
 }
 
 .button {
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	row-gap: 25px;
+	flex-wrap: wrap;
 }
 
 .cta > a {
-	margin: 0 30px 0 0;
+	margin: 0;
 	padding: 13px 50px;
 	display: inline-block;
 	font-size: 14px;
@@ -419,7 +408,7 @@ a.in:hover {
 }
 
 .card {
-	padding-top: 120px;
+	padding: 120px 15px 0;
 	align-items: center;
 }
 
@@ -438,7 +427,7 @@ a.in:hover {
 }
 
 .first-info {
-	padding-left: 60px;
+	padding: 15px;
 }
 
 .first-info > h2 {
@@ -515,7 +504,12 @@ p.text-head {
 	padding-bottom: 80px;
 	align-items: flex-end;
 	text-align: center;
+	flex-wrap: wrap;
 	column-gap: 80px;
+}
+
+.advantage div {
+	padding-bottom: 25px;
 }
 
 .advantage > h2 {
@@ -574,17 +568,24 @@ p.text-head {
 	transform: rotate(90deg);
 }
 
-.about-company {
-	padding-left: 50px;
-}
-
 .about-company > p:last-child {
 	color: #8f8f8f;
 }
 
 .logo-company {
 	margin: 200px auto 150px;
-	padding-left: 70px;
+	padding: 0 15px;
+}
+
+.firstlogo picture,
+.secondlogo  picture {
+	min-width: 193px;
+	min-height: 82px;
+}
+
+.logo-position {
+	position: relative;
+	top: -33px;
 }
 
 .last {
@@ -758,6 +759,7 @@ footer {
 
 .form-mail {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .form {
@@ -864,4 +866,132 @@ a.in-b:hover {
 .privacy a:hover {
 	opacity: 1;
 	text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+	h1,
+	h2 {
+		font-size: 70px;
+	}
+
+	.bgc-first {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -50%;
+		right: -30%;
+		background: url(../img/bcg-first.svg) no-repeat;
+		background-size: 100% / contain;
+		z-index: -1;
+		transition: all 2s ease;
+		transform: rotate(-5deg);
+	}
+	
+	header:hover>.bgc-first {
+		top: -55%;
+		right: -25%;
+		transform: rotate(-25deg);
+		filter: drop-shadow(5px 5px 20px 10px #176599);
+	}
+	
+	.bgc-second {
+		position: absolute;
+		width: 60%;
+		height: 200%;
+		top: -60%;
+		right: -5%;
+		background: url(../img/bcg-first.svg) no-repeat;
+		background-size: 100% / contain;
+		z-index: -1;
+		transform: rotate(-5deg);
+		transition: all 2s ease;
+	}
+	
+	header:hover>.bgc-second {
+		top: -65%;
+		right: 0%;
+		transform: rotate(-20deg);
+		filter: drop-shadow(5px 5px 20px 10px #176599);
+	}
+	
+	.bgc-third {
+		position: absolute;
+		width: 95%;
+		height: 200%;
+		top: -90%;
+		right: -45%;
+		background: url(../img/bcg-first.svg) no-repeat;
+		background-size: 100% / contain;
+		z-index: -1;
+		transform: rotate(-10deg);
+		transition: all 2s ease;
+	}
+	
+	header:hover>.bgc-third {
+		top: -85%;
+		right: -55%;
+		transform: rotate(-15deg);
+		filter: drop-shadow(5px 5px 20px 10px #176599);
+	}	
+
+	.flex-between {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+
+	.start-info,
+	.button,
+	.advantage,
+	.form-mail {
+		flex-wrap: nowrap;
+	}
+
+	.top-menu {
+		column-gap: 40px;
+	}
+
+	.top-menu a {
+		font-size: 13px;
+		letter-spacing: 1px;
+		line-height: 6.5em;
+		text-transform: uppercase;
+		color: #fefefe;
+	}
+	
+	.top-menu li:hover > a {
+		color: #1a1a1a;
+		font-weight: bold;
+	}
+
+	.main-exit > p {
+		padding: 35px 0;
+	}
+
+	.cta > a {
+		margin: 0 30px 0 0;
+	}
+
+	.main-picture {
+		padding-bottom: 80px;
+		width: 150%;	
+	}
+
+	.jeverly{
+		width: 150%;
+	}
+
+	.card-mac,
+	.last-white-bg,
+	.bottom-card {
+		width: 120%;
+	}
+
+	.first-info {
+		padding-left: 60px;
+	}
+
+	.about-company {
+		padding-left: 50px;
+	}
 }
