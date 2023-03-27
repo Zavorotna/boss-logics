@@ -383,38 +383,12 @@ a.in:hover {
 	width: 150%;
 	height: 150%;
 	top: 5%;
-	left: -15%;
+	left: -25%;
 	background: url(../img/bcg-two.svg) no-repeat;
 	background-size: 100% / contain;
 	z-index: -2;
 	transition: all 2s ease;
 	transform: rotate(5deg);
-}
-
-.bcg-first:hover > .bcg-first-section {
-	top: -15%;
-	left: -15%;
-	transform: rotate(-25deg);
-	filter: drop-shadow(5px 5px 20px 10px #176599);
-}
-
-.bcg-second-sec-two {
-	position: absolute;
-	width: 500px;
-	height: 80%;
-	top: 10%;
-	left: -10%;
-	background: url(../img/bcg-two.svg) no-repeat;
-	background-size: 100% / contain;
-	z-index: -2;
-	transition: all 2s ease;
-	transform: rotate(-15deg);
-}
-
-.bcg-first:hover > .bcg-second-sec-two {
-	top: -20%;
-	right: -30%;
-	transform: rotate(35deg);
 }
 
 .card {
@@ -512,6 +486,7 @@ p.text-head {
 	text-align: center;
 	flex-wrap: wrap;
 	column-gap: 80px;
+	row-gap: 25px;
 }
 
 .advantage > h2 {
@@ -1009,10 +984,6 @@ a.in-b:hover {
 		padding: 35px 0;
 	}
 
-	.cta > a {
-		margin: 0 30px 0 0;
-	}
-
 	.main-picture {
 		padding-bottom: 80px;
 		width: 150%;	
@@ -1060,6 +1031,37 @@ a.in-b:hover {
 }
 
 @media screen and (min-width:1440px) {
+	.bcg-first-section {
+		top: 5%;
+		left: -15%;
+	}
+
+	.bcg-first:hover > .bcg-first-section {
+		top: -15%;
+		left: -15%;
+		transform: rotate(-25deg);
+		filter: drop-shadow(5px 5px 20px 10px #176599);
+	}
+	
+	.bcg-second-sec-two {
+		position: absolute;
+		width: 500px;
+		height: 80%;
+		top: 10%;
+		left: -10%;
+		background: url(../img/bcg-two.svg) no-repeat;
+		background-size: 100% / contain;
+		z-index: -2;
+		transition: all 2s ease;
+		transform: rotate(-15deg);
+	}
+	
+	.bcg-first:hover > .bcg-second-sec-two {
+		top: -20%;
+		right: -30%;
+		transform: rotate(35deg);
+	}
+
 	.form-mail {
 		flex-wrap: nowrap;
 		justify-content: space-between;
