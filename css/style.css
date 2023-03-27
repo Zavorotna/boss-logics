@@ -85,6 +85,10 @@
 	font-style: normal;
 }
 
+html {
+	font-size: 1px;
+}
+
 body {
     margin: 0 auto;
     box-sizing: border-box;
@@ -93,14 +97,14 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 40rem;
     line-height: 1em;
     color: #1a1a1a;
     font-weight: 500;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 40rem;
 	line-height: 1em;
 	color: #1a1a1a;
 	font-weight: 500;
@@ -112,7 +116,7 @@ ul > li {
 
 p {
 	margin: 0;
-	font-size: 18px;
+	font-size: 18rem;
 	line-height: 1.4em;
 	color: #2b2b2b;
 }
@@ -127,9 +131,9 @@ header {
 }
 
 hr {
-	padding-bottom: 15px;
+	padding-bottom: 15rem;
 	border: none;
-	border-top: 1px solid #66737d;
+	border-top: 1rem solid #66737d;
 }
 
 .bcg-hidden {
@@ -138,8 +142,8 @@ hr {
 
 .wrapper {
     margin: 0 auto;
-	padding: 0 15px;
-    max-width: 1350px;
+	padding: 0 15rem;
+    max-width: 1350rem;
 }
 
 .flex-between {
@@ -184,28 +188,33 @@ hr {
 	transform: rotate(-45deg);
 }
 
+.navigation {
+	justify-content: center;
+}
+
 .logo {
-    padding: 40px 0;
+    padding: 40rem 0;
 }
 
 .logo-img {
 	width: 100%;
-	max-width: 166px;
-	max-height: 22px;
+	max-width: 166rem;
+	max-height: 22rem;
 }
 
 .nav-flex {
-	column-gap: 50px;
+	column-gap: 50rem;
 }
 
 .top-menu {
+	display: none;
     padding: 0;
-    column-gap: 20px;
+    column-gap: 20rem;
 }
 
 .top-menu a {
-    font-size: 13px;
-    letter-spacing: 1px;
+    font-size: 13rem;
+    letter-spacing: 1rem;
     line-height: 6.5em;
     text-transform: uppercase;
 	color: #1a1a1a;
@@ -218,10 +227,10 @@ hr {
 
 .social {
 	display: flex;
-	margin: 9px 0 0 50px;
-	padding: 40px 0;
+	margin: 0;
+	padding: 40rem 0;
 	align-items: center;
-	column-gap: 25px;
+	column-gap: 25rem;
 }
 
 .social a {
@@ -230,51 +239,51 @@ hr {
 }
 
 a.fb {
-	width: 11px;
-	height: 19px;
-	background-position: -2px -2px;
+	width: 11rem;
+	height: 19rem;
+	background-position: -2rem -2rem;
 }
 
 a.fb:hover {
-	width: 11px;
-	height: 19px;
-	background-position: -2px -24px;
+	width: 11rem;
+	height: 19rem;
+	background-position: -2rem -24rem;
 }
 
 a.tw {
-	width: 24px;
-	height: 19px;
-	background-position: -15px -2px;
+	width: 24rem;
+	height: 19rem;
+	background-position: -15rem -2rem;
 }
 
 a.tw:hover {
-	width: 24px;
-	height: 19px;
-	background-position: -15px -24px;
+	width: 24rem;
+	height: 19rem;
+	background-position: -15rem -24rem;
 }
 
 a.inst {
-	width: 20px;
-	height: 19px;
-	background-position: -41px -2px;
+	width: 20rem;
+	height: 19rem;
+	background-position: -41rem -2rem;
 }
 
 a.inst:hover {
-	width: 20px;
-	height: 19px;
-	background-position: -41px -24px;
+	width: 20rem;
+	height: 19rem;
+	background-position: -41rem -24rem;
 }
 
 a.in {
-	width: 21px;
-	height: 21px;
-	background-position: -63px -2px;
+	width: 21rem;
+	height: 21rem;
+	background-position: -63rem -2rem;
 }
 
 a.in:hover {
-	width: 21px;
-	height: 21px;
-	background-position: -63px -24px;
+	width: 21rem;
+	height: 21rem;
+	background-position: -63rem -24rem;
 }
 
 .start-info {
@@ -284,7 +293,7 @@ a.in:hover {
 }
 
 .line {
-    padding-left: 20px;
+    padding-left: 20rem;
     position: relative;
 }
 
@@ -294,22 +303,22 @@ a.in:hover {
 	top: 0;
     left: 0;
     height: 100%;
-    border-left: 3px solid #00ccff;
+    border-left: 3rem solid #00ccff;
 }
 
 .line > b {
-    font-size: 30px;
+    font-size: 30rem;
     text-transform: uppercase;
     color: #09f;
     mix-blend-mode: overlay;
-    -webkit-text-stroke: 1px #09f;
+    -webkit-text-stroke: 1rem #09f;
     -webkit-text-fill-color: #fff;
     line-height: inherit;
 }
 
 .main-exit > p {
-	max-width: 674px;
-	padding: 35px 15px;
+	max-width: 674rem;
+	padding: 35rem 15rem;
 }
 
 .main-picture img,
@@ -326,20 +335,20 @@ a.in:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	row-gap: 25px;
+	row-gap: 25rem;
 	flex-wrap: wrap;
 }
 
 .cta {
 	margin: 0;
-	padding: 13px 50px;
+	padding: 13rem 50rem;
 	display: inline-block;
-	font-size: 14px;
-	letter-spacing: 1px;
+	font-size: 14rem;
+	letter-spacing: 1rem;
 	text-transform: uppercase;
 	font-weight: bold;
-	border-radius: 26px;
-	border: 2px solid #0099ff;
+	border-radius: 26rem;
+	border: 2rem solid #0099ff;
 	background-color: #0099ff;
 	transition: all 0.5s ease;
 }
@@ -350,14 +359,14 @@ a.in:hover {
 
 .cta:hover {
 	color: #0099ff;
-	border: 2px solid #0099ff;
+	border: 2rem solid #0099ff;
 	background-color: #fff;
 }
 
 .cta-second {
 	font-weight: bold;
-	border-radius: 26px;
-	border: 2px solid #0099ff;
+	border-radius: 26rem;
+	border: 2rem solid #0099ff;
 	background-color: #fff;
 	transition: all 0.5s ease;
 }
@@ -392,13 +401,13 @@ a.in:hover {
 }
 
 .card {
-	padding: 20px 15px 0;
+	padding: 20rem  0;
 	align-items: center;
 }
 
 .line-two {
 	position: relative;
-	padding-left: 20px;
+	padding-left: 20rem;
 }
 
 .line-two::before {
@@ -407,11 +416,7 @@ a.in:hover {
 	top: 0;
     left: 0;
     height: 100%;
-    border-left: 3px solid #00ccff;
-}
-
-.first-info {
-	padding: 15px;
+    border-left: 3rem solid #00ccff;
 }
 
 .first-info > h2 {
@@ -420,16 +425,16 @@ a.in:hover {
 
 .first-info > p {
 	margin: 0;
-	padding: 46px 0;
-	font-size: 18px;
+	padding: 46rem 0;
+	font-size: 18rem;
 	line-height: 1.5em;
 	color: #2b2b2b;
 }
 
 p.text-head {
 	margin: 0;
-	font-size: 20px;
-	letter-spacing: 2px;
+	font-size: 20rem;
+	letter-spacing: 2rem;
 	line-height: 4.25em;
 	text-transform: uppercase;
 	color: #0099ff;
@@ -479,23 +484,23 @@ p.text-head {
 }
 
 .advantage {
-	max-width: 1100px;
+	max-width: 1100rem;
 	margin: 0 auto;
-	padding-bottom: 80px;
+	padding-bottom: 80rem;
 	align-items: flex-end;
 	text-align: center;
 	flex-wrap: wrap;
-	column-gap: 80px;
-	row-gap: 25px;
+	column-gap: 80rem;
+	row-gap: 25rem;
 }
 
 .advantage > h2 {
-	padding-bottom: 20px;
+	padding-bottom: 20rem;
 }
 
 .advantage > h3 {
-	font-size: 20px;
-	letter-spacing: 2px;
+	font-size: 20rem;
+	letter-spacing: 2rem;
 	text-transform: uppercase;
 	color: #1a1a1a;
 	font-weight: bold;
@@ -507,7 +512,7 @@ p.text-head {
 
 .card-last {
 	position: relative;
-	max-width: 1350px;
+	max-width: 1350rem;
 	margin: 0 auto;
 }
 
@@ -550,35 +555,35 @@ p.text-head {
 }
 
 .logo-company {
-	margin: 200px auto 150px;
-	padding: 0 15px;
+	margin: 200rem auto 150rem;
+	padding: 0 15rem;
 }
 
 .firstlogo {
-	padding-bottom: 105px;
+	padding-bottom: 105rem;
 }
 
 .firstlogo,
 .secondlogo {
-	row-gap: 55px;
-	column-gap: 65px;
+	row-gap: 55rem;
+	column-gap: 65rem;
 	justify-content: center;
 }
 
 .firstlogo picture,
 .secondlogo  picture {
-	min-width: 220px;
+	min-width: 220rem;
 	text-align: center;
 }
 
 .logo-position {
 	position: relative;
-	top: -33px;
+	top: -33rem;
 }
 
 .last {
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 50rem;
 }
 
 .bcg-last {
@@ -596,7 +601,7 @@ p.text-head {
 .bottom-card:hover > .bcg-last,
 .bottom-card:hover > .bcg-last-two,
 .bottom-card:hover > .bcg-last-three {
-	filter: drop-shadow(0 0 30px #10aaff);
+	filter: drop-shadow(0 0 30rem #10aaff);
 	transform: rotate(15deg);
 }
 
@@ -630,31 +635,31 @@ footer {
 }
 
 .footer-top {
-	padding: 60px 15px;
+	padding: 60rem 15rem;
 	justify-content: flex-start;
-	column-gap: 60px;
+	column-gap: 60rem;
 }
 
 .line-bottom {
-	margin: 15px 0 0;
-	width: 166px;
+	margin: 15rem 0 0;
+	width: 166rem;
 	border: none;
-	border-top: 1px solid #00ccff;
+	border-top: 1rem solid #00ccff;
 }
 
 .bottom-logo > p {
-	font-size: 14px;
+	font-size: 14rem;
 	color: #fff;
 }
 
 .link {
-	padding: 25px 0;
+	padding: 25rem 0;
 }
 
 .link > p,
 .contact-info > p {
-	font-size: 14px;
-	letter-spacing: 1px;
+	font-size: 14rem;
+	letter-spacing: 1rem;
 	text-transform: uppercase;
 	color: #0099ff;
 	font-weight: bold;
@@ -662,12 +667,12 @@ footer {
 
 .link ul {
 	margin: 0 auto;
-	padding: 25px 70px 0 0;
+	padding: 25rem 70rem 0 0;
 }
 
 .link ul > li > a {
-	font-size: 14px;
-	line-height: 22px;
+	font-size: 14rem;
+	line-height: 22rem;
 	color: #ffffff;
 	font-weight: 300;
 }
@@ -678,7 +683,7 @@ footer {
 }
 
 .contacts {
-	padding: 25px 0 0 25px;
+	padding: 25rem 0 0 25rem;
 	position: relative;
 }
 
@@ -695,55 +700,55 @@ footer {
 }
 
 .mail::before {
-	top: 30px;
+	top: 30rem;
 	left: 0;
-	width: 14px;
-	height: 11px;
-	background-position: -86px -12px;
+	width: 14rem;
+	height: 11rem;
+	background-position: -86rem -12rem;
 }
 
 .phone::before {
-	top: 75px;
+	top: 75rem;
 	left: 0;
-	width: 14px;
-	height: 15px;
-	background-position: -114px -10px;
+	width: 14rem;
+	height: 15rem;
+	background-position: -114rem -10rem;
 }
 
 .adress::before {
-	top: 125px;
+	top: 125rem;
 	left: 0;
-	width: 10px;
-	height: 15px;
-	background-position: -102px -9px;
+	width: 10rem;
+	height: 15rem;
+	background-position: -102rem -9rem;
 }
 
 .contact-info > p {
-	padding-top: 25px;
+	padding-top: 25rem;
 }
 
 .contacts > p {
-	padding-bottom: 25px;
+	padding-bottom: 25rem;
 }
 
 .contacts > p:first-child {
-	font-size: 14px;
-	letter-spacing: 1px;
+	font-size: 14rem;
+	letter-spacing: 1rem;
 	text-transform: uppercase;
 	color: #0099ff;
 	font-weight: bold;
 }
 
 .contacts > p > a {
-	font-size: 14px;
+	font-size: 14rem;
 	color: #ffffff;
 	font-weight: 300;
 }
 
 .contacts-form > p:first-child {
-	padding-bottom: 25px;
-	font-size: 14px;
-	letter-spacing: 1px;
+	padding-bottom: 25rem;
+	font-size: 14rem;
+	letter-spacing: 1rem;
 	text-transform: uppercase;
 	color: #0099ff;
 	font-weight: bold;
@@ -754,17 +759,17 @@ footer {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	row-gap: 25px;
+	row-gap: 25rem;
 }
 
 .form {
 	width: 100%;
-	padding: 15px 23px;
-	font-size: 14px;
+	padding: 15rem 23rem;
+	font-size: 14rem;
 	color: #ffffff;
 	background-color: #001726;
-	border-radius: 23px;
-	border: 1px solid #fff;
+	border-radius: 23rem;
+	border: 1rem solid #fff;
 	transition: all .5s ease;
 }
 
@@ -775,10 +780,10 @@ footer {
 
 .social-bottom {
 	display: flex;
-	padding: 40px 0;
+	padding: 40rem 0;
 	align-items: center;
 	justify-content: center;
-	column-gap: 25px;
+	column-gap: 25rem;
 }
 
 .social-bottom a {
@@ -787,69 +792,69 @@ footer {
 }
 
 a.fb-b {
-	width: 11px;
-	height: 19px;
-	background-position: -2px -2px;
+	width: 11rem;
+	height: 19rem;
+	background-position: -2rem -2rem;
 }
 
 a.fb-b:hover {
-	width: 11px;
-	height: 19px;
-	background-position: -3px -47px;
+	width: 11rem;
+	height: 19rem;
+	background-position: -3rem -47rem;
 }
 
 a.tw-b {
-	width: 24px;
-	height: 19px;
-	background-position: -15px -2px;
+	width: 24rem;
+	height: 19rem;
+	background-position: -15rem -2rem;
 }
 
 a.tw-b:hover {
-	width: 24px;
-	height: 19px;
-	background-position: -16px -48px;
+	width: 24rem;
+	height: 19rem;
+	background-position: -16rem -48rem;
 }
 
 a.inst-b {
-	width: 20px;
-	height: 19px;
-	background-position: -41px -2px;
+	width: 20rem;
+	height: 19rem;
+	background-position: -41rem -2rem;
 }
 
 a.inst-b:hover {
-	width: 20px;
-	height: 19px;
-	background-position: -42px -48px;
+	width: 20rem;
+	height: 19rem;
+	background-position: -42rem -48rem;
 }
 
 a.in-b {
-	width: 21px;
-	height: 21px;
-	background-position: -64px -2px;
+	width: 21rem;
+	height: 21rem;
+	background-position: -64rem -2rem;
 }
 
 a.in-b:hover {
-	width: 21px;
-	height: 21px;
-	background-position: -65px -46px;
+	width: 21rem;
+	height: 21rem;
+	background-position: -65rem -46rem;
 }
 
 .footer-bottom p {
 	opacity: 0.612;
-	font-size: 14px;
+	font-size: 14rem;
 	color: #ffffff;
 	font-weight: 300;
 }
 
 .privacy {
-	padding-bottom: 20px;
+	padding-bottom: 20rem;
 	display: flex;
-	column-gap: 35px;
+	column-gap: 35rem;
 }
 
 .privacy > p > a {
 	opacity: 0.612;
-	font-size: 14px;
+	font-size: 14rem;
 	color: #fff;
 	font-weight: 300;
 }
@@ -862,8 +867,8 @@ a.in-b:hover {
 @media screen and (min-width: 426px) {
 	.form-mail {
 		justify-content: space-between;
-		row-gap: 15px;
-		column-gap: 65px;
+		row-gap: 15rem;
+		column-gap: 65rem;
 	}
 
 	.social-bottom {
@@ -879,16 +884,16 @@ a.in-b:hover {
 
 @media screen and (min-width: 881px) {
 	.firstlogo, .secondlogo {
-		padding-bottom: 55px;
-		row-gap: 55px;
-		column-gap: 25px;
+		padding-bottom: 55rem;
+		row-gap: 55rem;
+		column-gap: 25rem;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	h1,
 	h2 {
-		font-size: 70px;
+		font-size: 70rem;
 	}
 
 	.bgc-first {
@@ -908,7 +913,7 @@ a.in-b:hover {
 		top: -55%;
 		right: -25%;
 		transform: rotate(-25deg);
-		filter: drop-shadow(5px 5px 20px 10px #176599);
+		filter: drop-shadow(5rem 5rem 20rem 10rem #176599);
 	}
 	
 	.bgc-second {
@@ -928,7 +933,7 @@ a.in-b:hover {
 		top: -65%;
 		right: 0%;
 		transform: rotate(-20deg);
-		filter: drop-shadow(5px 5px 20px 10px #176599);
+		filter: drop-shadow(5rem 5rem 20rem 10rem #176599);
 	}
 	
 	.bgc-third {
@@ -948,13 +953,17 @@ a.in-b:hover {
 		top: -85%;
 		right: -55%;
 		transform: rotate(-15deg);
-		filter: drop-shadow(5px 5px 20px 10px #176599);
+		filter: drop-shadow(5rem 5rem 20rem 10rem #176599);
 	}	
 
 	.flex-between {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: nowrap;
+	}
+
+	.top-menu {
+		display: flex;
 	}
 
 	.start-info,
@@ -964,12 +973,12 @@ a.in-b:hover {
 	}
 
 	.top-menu {
-		column-gap: 40px;
+		column-gap: 40rem;
 	}
 
 	.top-menu a {
-		font-size: 13px;
-		letter-spacing: 1px;
+		font-size: 13rem;
+		letter-spacing: 1rem;
 		line-height: 6.5em;
 		text-transform: uppercase;
 		color: #fefefe;
@@ -981,11 +990,11 @@ a.in-b:hover {
 	}
 
 	.main-exit > p {
-		padding: 35px 0;
+		padding: 35rem 0;
 	}
 
 	.main-picture {
-		padding-bottom: 80px;
+		padding-bottom: 80rem;
 		width: 150%;	
 	}
 
@@ -1000,21 +1009,21 @@ a.in-b:hover {
 	}
 
 	.first-info {
-		padding-left: 60px;
+		padding-left: 60rem;
 	}
 
 	.about-company {
-		padding-left: 50px;
+		padding-left: 50rem;
 	}
 
 	.card {
-		padding: 120px 15px 0;
+		padding: 120rem 15rem 0;
 		align-items: center;
 	}
 
 	.footer-top {
 		justify-content: space-between;
-		column-gap: 25px;
+		column-gap: 25rem;
 	}
 
 	.link {
@@ -1022,11 +1031,11 @@ a.in-b:hover {
 	}
 
 	.contacts-form { 
-		margin-left: 15px;
+		margin-left: 15rem;
 	}
 
 	.form-mail label {
-		max-width: 230px;
+		max-width: 230rem;
 	}
 }
 
@@ -1040,12 +1049,12 @@ a.in-b:hover {
 		top: -15%;
 		left: -15%;
 		transform: rotate(-25deg);
-		filter: drop-shadow(5px 5px 20px 10px #176599);
+		filter: drop-shadow(5rem 5rem 20rem 10rem #176599);
 	}
 	
 	.bcg-second-sec-two {
 		position: absolute;
-		width: 500px;
+		width: 500rem;
 		height: 80%;
 		top: 10%;
 		left: -10%;
@@ -1066,10 +1075,10 @@ a.in-b:hover {
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		row-gap: 0;
-		column-gap: 65px;
+		column-gap: 65rem;
 	}
 
 	.form-mail label {
-		min-width: 300px;
+		min-width: 300rem;
 	}
 }
