@@ -52,6 +52,40 @@
                                 </ul>
                             </nav>
                         </div>
+                        <div class="burger" id="burger">
+                            <span></span>
+                        </div>
+                        <div class="mobile-menu mobile" id="mobile">
+                            <div class="logo-burger">
+                                <a href="index.html">
+                                    <picture>
+                                        <img class="logo-img" src="img/logo.svg" alt="Logo company Boss Logics">
+                                    </picture>
+                                </a>
+                            </div>
+                            <nav class="burger-menu">
+                                <ul class="top-menu-burger">
+                                    <li>
+                                        <a href="#">solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">together</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">customers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">about</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                     <div class="start-info flex-between">
                         <div class="main-exit">
@@ -278,4 +312,12 @@
         </footer>
     </div>
 </body>
+<script>
+    const burger = document.querySelector('.burger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    burger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mobileMenu.classList.toggle('activemobile');
+    });
+</script>
 </html>
