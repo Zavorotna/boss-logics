@@ -426,13 +426,12 @@ a.in:hover {
 .mc-last {
 	width: 100%;
 	height: 100%;
-	object-fit: cover
 }
 
 .button {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	row-gap: 25rem;
 	flex-wrap: wrap;
 	margin-bottom: 25rem;
@@ -441,7 +440,7 @@ a.in:hover {
 .cta {
 	margin: 0;
 	padding: 13rem 50rem;
-	display: inline-block;
+	display: flex;
 	font-size: 14rem;
 	letter-spacing: 1rem;
 	text-transform: uppercase;
@@ -513,7 +512,7 @@ a.in:hover {
 .card {
 	padding: 20rem  0;
 	align-items: center;
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 	row-gap: 25rem;
 }
 
@@ -553,7 +552,7 @@ p.text-head {
 	font-weight: bold;
 }
 
-.card-mac-two {
+.card-mac {
 	position: relative;
 }
 
@@ -561,39 +560,27 @@ p.text-head {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 10%;
-	right: -50%;
+	top: -15%;
+	right: 0;
 	background: url(../img/white.svg) no-repeat;
-	background-size: 100% / contain;
+	background-size: 100%;
 	z-index: -2;
 	transition: all 2s ease;
 	transform: rotate(-15deg);
 }
 
-.card-mac:hover > .white-bg {
-	top: -20%;
-	right: -40%;
-	transform: rotate(-90deg);
-}
-
 .white-bg-two {
 	position: absolute;
-	width: 200%;
+	width: 100%;
 	height: 100%;
-	top: 45%;
-	left: 45%;
+	top: 5%;
+	left: 0;
 	background: url(../img/white.svg) no-repeat;
-	background-size: 100% / contain;
+	background-size: 100%;
 	z-index: -2;
 	transition: all 2s ease;
-	transform: rotate(370deg);
 }
 
-.card-mac:hover > .white-bg-two {
-	top: -10%;
-	left: 50%;
-	transform: rotate(340deg);
-}
 
 .advantage {
 	max-width: 1100rem;
@@ -632,36 +619,26 @@ p.text-head {
 
 .white-bg-l {
 	position: absolute;
-	width: 80%;
-	height: 150%;
-	top: -20%;
-	left: -25%;
+	width: 100%;
+	height: 100%;
+	top: -10%;
+	left: -20%;
 	background: url(../img/big-white.svg) no-repeat;
-	background-size: auto;
+	background-size: 130%;
 	z-index: -1;
 	transition: all 2s ease;
-	transform: rotate(10deg);
-}
-
-.last-white-bg:hover > .white-bg-l {
-	transform: rotate(180deg);
 }
 
 .white-bg-two-l {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 55%;
-	left: -50%;
+	top: 15%;
+	left: 10%;
 	background: url(../img/white.svg) no-repeat;
-	background-size: auto;
+	background-size: 110%;
 	z-index: -1;
 	transition: all 2s ease;
-	transform: rotate(110deg);
-}
-
-.last-white-bg:hover > .white-bg-two-l {
-	transform: rotate(90deg);
 }
 
 .about-company > p:last-child {
@@ -985,6 +962,10 @@ a.in-b:hover {
 		column-gap: 65rem;
 	}
 
+	.cta {
+		margin-right: 25rem;
+	}
+
 	.social-bottom {
 		justify-content: flex-start;
 	}
@@ -1029,6 +1010,18 @@ a.in-b:hover {
 		transition: all 2s ease;
 	}
 
+	.bcg-first-section {
+		top: -5%;
+		left: -10%;
+		background-size: 40%;
+	}
+	
+	.bcg-second-sec-two {
+		top: 0;
+		left: -5%;
+		background-size: 30%;
+	}
+
 	.card {
 		padding: 20rem  0;
 		align-items: flex-start;
@@ -1037,16 +1030,29 @@ a.in-b:hover {
 	}
 }
 
-@media screen and (min-width: 881px) {
+@media screen and (min-width: 839px) {
 	.flex-between {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: nowrap;
 	}
+
 	.firstlogo, .secondlogo {
 		padding-bottom: 55rem;
 		row-gap: 55rem;
 		column-gap: 25rem;
+	}
+
+	.bcg-first-section {
+		top: -5%;
+		left: -10%;
+		background-size: 30%;
+	}
+	
+	.bcg-second-sec-two {
+		top: 0;
+		left: -5%;
+		background-size: 20%;
 	}
 }
 
@@ -1076,9 +1082,6 @@ a.in-b:hover {
 		right: -5%;
 		background: url(../img/bcg-first.svg) no-repeat;
 		background-size: 100% / contain;
-		z-index: -1;
-		transform: rotate(-5deg);
-		transition: all 2s ease;
 	}
 	
 	header:hover>.bgc-second {
@@ -1149,8 +1152,14 @@ a.in-b:hover {
 		width: 150%;	
 	}
 
-	.jeverly{
-		width: 150%;
+	.main-picture img,
+	.jeverly img,
+	.mcbook img,
+	.second-jev img,
+	.mc-last {
+		width: auto;
+		height: auto;
+		object-fit: none;
 	}
 
 	.card-mac,
@@ -1169,7 +1178,57 @@ a.in-b:hover {
 
 	.card {
 		padding: 120rem 15rem 0;
-		align-items: center;
+		align-items: flex-start;
+	}
+
+	.bcg-first-section {
+		top: 5%;
+		left: -10%;
+		background-size: 50%;
+	}
+	
+	.bcg-second-sec-two {
+		top: 15%;
+		left: -5%;
+		background-size: 40%;
+	}
+
+	.white-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 10%;
+		right: -50%;
+		background: url(../img/white.svg) no-repeat;
+		background-size: 100% / contain;
+		z-index: -2;
+		transition: all 2s ease;
+		transform: rotate(-15deg);
+	}
+	
+	.card-mac:hover > .white-bg {
+		top: -20%;
+		right: -40%;
+		transform: rotate(-90deg);
+	}
+	
+	.white-bg-two {
+		position: absolute;
+		width: 200%;
+		height: 100%;
+		top: 45%;
+		left: 45%;
+		background: url(../img/white.svg) no-repeat;
+		background-size: 100% / contain;
+		z-index: -2;
+		transition: all 2s ease;
+		transform: rotate(370deg);
+	}
+	
+	.card-mac:hover > .white-bg-two {
+		top: -10%;
+		left: 50%;
+		transform: rotate(340deg);
 	}
 
 	.footer-top {
