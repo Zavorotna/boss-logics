@@ -383,11 +383,15 @@ a.in:hover {
 	padding: 25rem 25rem;
 }
 
-
 .start-info {
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
+}
+
+.main-exit > p {
+	max-width: 674rem;
+	padding: 35rem 15rem;
 }
 
 .line {
@@ -414,11 +418,6 @@ a.in:hover {
     line-height: inherit;
 }
 
-.main-exit > p {
-	max-width: 674rem;
-	padding: 35rem 15rem;
-}
-
 .main-picture img,
 .jeverly img,
 .mcbook img,
@@ -440,7 +439,8 @@ a.in:hover {
 .cta {
 	margin: 0;
 	padding: 13rem 50rem;
-	display: flex;
+	min-width: 110rem;
+	display: inline-block;
 	font-size: 14rem;
 	letter-spacing: 1rem;
 	text-transform: uppercase;
@@ -849,7 +849,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	row-gap: 25rem;
 }
 
@@ -980,10 +980,6 @@ a.in-b:hover {
 	
 	.contact-info > p {
 		padding-top: 0;
-	}
-	
-	.cta {
-		margin-right: 25rem;
 	}
 
 	.bcg-first-section {
@@ -1233,7 +1229,7 @@ a.in-b:hover {
 
 	.footer-top {
 		justify-content: space-between;
-		column-gap: 25rem;
+		column-gap: 5rem;
 	}
 
 	.link {
