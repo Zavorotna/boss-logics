@@ -576,11 +576,10 @@ p.text-head {
 	top: 5%;
 	left: 0;
 	background: url(../img/white.svg) no-repeat;
-	background-size: 7`0%;
+	background-size: 70%;
 	z-index: -2;
 	transition: all 2s ease;
 }
-
 
 .advantage {
 	max-width: 1100rem;
@@ -676,16 +675,19 @@ p.text-head {
 	top: -33rem;
 }
 
+.last {
+	margin-bottom: 50rem;
+}
+
 .bottom-card {
 	position: relative;
-	margin-bottom: 50rem;
 }
 
 .bcg-last {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 50%;
+	top: 60%;
 	right: -20%;
 	background: url(../img/bottom.svg) no-repeat;
 	background-size: 100%;
@@ -935,6 +937,10 @@ a.in-b:hover {
 	background-position: -65rem -46rem;
 }
 
+.footer-bottom {
+	padding-top: 20rem;
+}
+
 .footer-bottom p {
 	opacity: 0.612;
 	font-size: 14rem;
@@ -983,8 +989,8 @@ a.in-b:hover {
 		max-height: 22rem;
 	}
 	
-	.contact-info > p {
-		padding-top: 0;
+	.link {
+		min-width: 300rem;
 	}
 
 	.card {
@@ -1001,6 +1007,11 @@ a.in-b:hover {
 		row-gap: 95rem;
 		column-gap: 155rem;
 	}
+
+	.link {
+		min-width: 400rem;
+	}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -1102,14 +1113,10 @@ a.in-b:hover {
 	.main-picture img {
 		width: 100%;
 	}
-	
-	.jeverly img,
-	.mcbook img,
-	.second-jev img,
-	.mc-last {
-		width: auto;
-		height: auto;
-		object-fit: none;
+
+	.jeverly img {
+		min-width: 310rem;
+		min-height: 332rem;
 	}
 
 	.card-mac,
@@ -1142,6 +1149,11 @@ a.in-b:hover {
 
 	.link {
 		padding: 0;
+		min-width: 150rem;
+	}
+
+	.contact-info > p {
+		padding-top: 0;
 	}
 	
 	.contacts-form { 
@@ -1170,5 +1182,69 @@ a.in-b:hover {
 
 	.form-mail label {
 		min-width: 300rem;
+	}
+}
+
+@media screen and (min-width: 2200px) {
+	html {
+		font-size: 2px;
+	}
+
+	.jeverly img {
+		width: 110%;
+	}
+
+	.social-bottom a {
+		display: block;
+		background: url(../img/sprite.png) no-repeat;
+		background-size: 550%;
+	}
+	
+	a.fb-b {
+		width: 11rem;
+		height: 19rem;
+		background-position: -2rem -2rem;
+	}
+	
+	a.fb-b:hover {
+		width: 11rem;
+		height: 19rem;
+		background-position: -3rem -47rem;
+	}
+	
+	a.tw-b {
+		width: 24rem;
+		height: 19rem;
+		background-position: -15rem -2rem;
+	}
+	
+	a.tw-b:hover {
+		width: 24rem;
+		height: 19rem;
+		background-position: -16rem -48rem;
+	}
+	
+	a.inst-b {
+		width: 20rem;
+		height: 19rem;
+		background-position: -41rem -2rem;
+	}
+	
+	a.inst-b:hover {
+		width: 20rem;
+		height: 19rem;
+		background-position: -42rem -48rem;
+	}
+	
+	a.in-b {
+		width: 21rem;
+		height: 21rem;
+		background-position: -64rem -2rem;
+	}
+	
+	a.in-b:hover {
+		width: 21rem;
+		height: 21rem;
+		background-position: -65rem -46rem;
 	}
 }
