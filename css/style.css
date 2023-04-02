@@ -234,57 +234,18 @@ hr {
 	column-gap: 25rem;
 }
 
-.social a {
-	display: block;
-	background: url(../img/sprite.png) no-repeat;
-}
-
-a.fb {
-	width: 11rem;
-	height: 19rem;
-	background-position: -2rem -2rem;
-}
-
-a.fb:hover {
-	width: 11rem;
-	height: 19rem;
-	background-position: -2rem -24rem;
-}
-
-a.tw {
-	width: 24rem;
-	height: 19rem;
-	background-position: -15rem -2rem;
-}
-
-a.tw:hover {
-	width: 24rem;
-	height: 19rem;
-	background-position: -15rem -24rem;
-}
-
-a.inst {
-	width: 20rem;
-	height: 19rem;
-	background-position: -41rem -2rem;
-}
-
-a.inst:hover {
-	width: 20rem;
-	height: 19rem;
-	background-position: -41rem -24rem;
-}
-
+a.fb,
+a.tw,
+a.inst,
 a.in {
-	width: 21rem;
-	height: 21rem;
-	background-position: -63rem -2rem;
+	fill: #fff;
 }
 
+a.fb:hover,
+a.tw:hover,
+a.inst:hover,
 a.in:hover {
-	width: 21rem;
-	height: 21rem;
-	background-position: -63rem -24rem;
+	fill: #08293f;
 }
 
 .burger {
@@ -781,44 +742,15 @@ footer {
 }
 
 .contacts {
-	padding: 25rem 0 0 25rem;
-	position: relative;
+	padding-top: 25rem;
 }
 
-.mail {
-	text-transform: lowercase;
-}
 
-.mail::before,
-.phone::before,
-.adress::before {
-	content: "";
-	position: absolute;
-	background: url(../img/sprite.png) no-repeat;
-}
-
-.mail::before {
-	top: 30rem;
-	left: 0;
-	width: 14rem;
-	height: 11rem;
-	background-position: -86rem -12rem;
-}
-
-.phone::before {
-	top: 75rem;
-	left: 0;
-	width: 14rem;
-	height: 15rem;
-	background-position: -114rem -10rem;
-}
-
-.adress::before {
-	top: 125rem;
-	left: 0;
-	width: 10rem;
-	height: 15rem;
-	background-position: -102rem -9rem;
+.mail,
+.phone,
+.adress {
+	padding-right: 15rem;
+ 	fill: #fff;
 }
 
 .contact-info > p {
@@ -884,57 +816,18 @@ footer {
 	column-gap: 25rem;
 }
 
-.social-bottom a {
-	display: block;
-	background: url(../img/sprite.png) no-repeat;
-}
-
-a.fb-b {
-	width: 11rem;
-	height: 19rem;
-	background-position: -2rem -2rem;
-}
-
-a.fb-b:hover {
-	width: 11rem;
-	height: 19rem;
-	background-position: -3rem -47rem;
-}
-
-a.tw-b {
-	width: 24rem;
-	height: 19rem;
-	background-position: -15rem -2rem;
-}
-
-a.tw-b:hover {
-	width: 24rem;
-	height: 19rem;
-	background-position: -16rem -48rem;
-}
-
-a.inst-b {
-	width: 20rem;
-	height: 19rem;
-	background-position: -41rem -2rem;
-}
-
-a.inst-b:hover {
-	width: 20rem;
-	height: 19rem;
-	background-position: -42rem -48rem;
-}
-
+a.fb-b,
+a.tw-b,
+a.inst-b,
 a.in-b {
-	width: 21rem;
-	height: 21rem;
-	background-position: -64rem -2rem;
+	fill: #fff;
 }
 
+a.fb-b:hover,
+a.tw-b:hover,
+a.inst-b:hover,
 a.in-b:hover {
-	width: 21rem;
-	height: 21rem;
-	background-position: -65rem -46rem;
+	fill: #0099ff;
 }
 
 .footer-bottom {
@@ -1192,59 +1085,5 @@ a.in-b:hover {
 
 	.jeverly img {
 		width: 110%;
-	}
-
-	.social-bottom a {
-		display: block;
-		background: url(../img/sprite.png) no-repeat;
-		background-size: 550%;
-	}
-	
-	a.fb-b {
-		width: 11rem;
-		height: 19rem;
-		background-position: -2rem -2rem;
-	}
-	
-	a.fb-b:hover {
-		width: 11rem;
-		height: 19rem;
-		background-position: -3rem -47rem;
-	}
-	
-	a.tw-b {
-		width: 24rem;
-		height: 19rem;
-		background-position: -15rem -2rem;
-	}
-	
-	a.tw-b:hover {
-		width: 24rem;
-		height: 19rem;
-		background-position: -16rem -48rem;
-	}
-	
-	a.inst-b {
-		width: 20rem;
-		height: 19rem;
-		background-position: -41rem -2rem;
-	}
-	
-	a.inst-b:hover {
-		width: 20rem;
-		height: 19rem;
-		background-position: -42rem -48rem;
-	}
-	
-	a.in-b {
-		width: 21rem;
-		height: 21rem;
-		background-position: -64rem -2rem;
-	}
-	
-	a.in-b:hover {
-		width: 21rem;
-		height: 21rem;
-		background-position: -65rem -46rem;
 	}
 }
