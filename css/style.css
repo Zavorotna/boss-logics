@@ -1085,4 +1085,13 @@ a.in-b:hover {
 	.jeverly img {
 		width: 110%;
 	}
+
+	.firstlogo img,
+	.secondlogo img {
+		width: 70%;
+	}
+	
+	img.hm {
+		width: 40%;
+	}
 }
