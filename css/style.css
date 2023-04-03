@@ -742,14 +742,13 @@ footer {
 }
 
 .contacts {
+	min-width: 220rem;
 	padding-top: 25rem;
 }
-
 
 .mail,
 .phone,
 .adress {
-	padding-right: 15rem;
  	fill: #fff;
 }
 
