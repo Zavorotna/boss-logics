@@ -1070,6 +1070,18 @@ a.in-b:hover {
 		column-gap: 25rem;
 	}
 
+	.bcg-last {
+		width: 150%;
+		height: 150%;
+		top: 35%;
+		right: -30%;
+	}
+
+	.bcg-last-two {
+		width: 120%;
+		height: 120%;
+	}
+
 	.footer-top {
 		justify-content: space-between;
 		column-gap: 5rem;
